@@ -370,9 +370,9 @@ static void * const kTLYShyNavBarManagerKVOContext = (void*)&kTLYShyNavBarManage
     }
 }
 
-- (void)expandNavBar
+- (TLYShyViewController*)shyNavBarController
 {
-    [self.navBarController updateYOffset:300];
+    return self.navBarController;
 }
 
 - (void)cleanup

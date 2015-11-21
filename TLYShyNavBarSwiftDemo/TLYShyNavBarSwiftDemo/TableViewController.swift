@@ -22,10 +22,13 @@ class TableViewController: UIViewController {
         /* Library code */
         self.shyNavBarManager.scrollView = self.tableView;
         self.shyNavBarManager.extensionView = view
+        print(self.shyNavBarManager.shyNavBarController()!.expanded)
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.shyNavBarManager.expandNavBar()
+        print(self.shyNavBarManager.shyNavBarController()!.expanded)
+        self.shyNavBarManager.shyNavBarController()!.expand()
+        print(self.shyNavBarManager.shyNavBarController()!.expanded)
     }
 }
 

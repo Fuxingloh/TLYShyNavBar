@@ -39,6 +39,9 @@ typedef CGFloat(^TLYShyViewControllerContractionAmountBlock)(UIView *view);
 
 @property (nonatomic) TLYShyNavBarFade fadeBehavior;
 
+@property (nonatomic, assign) BOOL contracted;
+@property (nonatomic, assign) BOOL expanded;
+
 /* Sticky means it will always stay in expanded state
  */
 @property (nonatomic) BOOL sticky;
