@@ -370,9 +370,19 @@ static void * const kTLYShyNavBarManagerKVOContext = (void*)&kTLYShyNavBarManage
     }
 }
 
-- (TLYShyViewController*)shyNavBarController
+- (BOOL)expanded
 {
-    return self.navBarController;
+    return self.navBarController.expanded;
+}
+
+- (CGFloat)expand
+{
+    return [self.navBarController expand];
+}
+
+- (CGFloat)contract
+{
+    return [self.navBarController contract];
 }
 
 - (void)cleanup

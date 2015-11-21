@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "TLYShyNavBarFade.h"
-#import "ShyControllers/TLYShyViewController.h"
 
 
 /** CLASS DESCRIPTION:
@@ -39,7 +38,9 @@
  */
 @property (nonatomic, strong) UIView *extensionView;
 
-- (TLYShyViewController*)shyNavBarController;
+- (BOOL)expanded;
+- (CGFloat)expand;
+- (CGFloat)contract;
 /* The container contains the extension view, if any. Exposed to
  * allow the developer to adjust content offset as necessary.
  */
