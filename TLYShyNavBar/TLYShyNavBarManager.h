@@ -38,6 +38,7 @@
  */
 @property (nonatomic, strong) UIView *extensionView;
 
+- (void)expandNavBar;
 /* The container contains the extension view, if any. Exposed to
  * allow the developer to adjust content offset as necessary.
  */

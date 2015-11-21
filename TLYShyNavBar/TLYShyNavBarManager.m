@@ -370,6 +370,11 @@ static void * const kTLYShyNavBarManagerKVOContext = (void*)&kTLYShyNavBarManage
     }
 }
 
+- (void)expandNavBar
+{
+    [self.navBarController updateYOffset:300];
+}
+
 - (void)cleanup
 {
     [self.navBarController expand];

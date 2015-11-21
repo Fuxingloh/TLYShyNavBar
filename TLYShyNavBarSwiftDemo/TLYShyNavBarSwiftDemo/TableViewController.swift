@@ -23,9 +23,13 @@ class TableViewController: UIViewController {
         self.shyNavBarManager.scrollView = self.tableView;
         self.shyNavBarManager.extensionView = view
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.shyNavBarManager.expandNavBar()
+    }
 }
 
-extension TableViewController: UITableViewDataSource {
+extension TableViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 50
@@ -38,4 +42,5 @@ extension TableViewController: UITableViewDataSource {
         
         return cell
     }
+
 }
